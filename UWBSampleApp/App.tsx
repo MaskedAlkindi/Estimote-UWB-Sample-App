@@ -39,34 +39,38 @@ export default function App() {
         errorListener.remove();
       };
     } else if (Platform.OS === 'ios') {
-      const eventEmitter = new NativeEventEmitter(CustomEstimoteUWBManager);
+      if (CustomEstimoteUWBManager) {
+        const eventEmitter = new NativeEventEmitter(CustomEstimoteUWBManager);
 
-      const discoveredListener = eventEmitter.addListener('onDeviceDiscovered', (deviceInfo) => {
-        console.log('Discovered device:', deviceInfo);
-      });
+        const discoveredListener = eventEmitter.addListener('onDeviceDiscovered', (deviceInfo) => {
+          console.log('Discovered device:', deviceInfo);
+        });
 
-      const connectedListener = eventEmitter.addListener('onDeviceConnected', (deviceInfo) => {
-        console.log('Connected to device:', deviceInfo);
-      });
+        const connectedListener = eventEmitter.addListener('onDeviceConnected', (deviceInfo) => {
+          console.log('Connected to device:', deviceInfo);
+        });
 
-      const positionUpdatedListener = eventEmitter.addListener('onPositionUpdated', (positionInfo) => {
-        console.log('Position updated:', positionInfo);
-      });
+        const positionUpdatedListener = eventEmitter.addListener('onPositionUpdated', (positionInfo) => {
+          console.log('Position updated:', positionInfo);
+        });
 
-      CustomEstimoteUWBManager.startScanning();
+        CustomEstimoteUWBManager.startScanning();
 
-      return () => {
-        discoveredListener.remove();
-        connectedListener.remove();
-        positionUpdatedListener.remove();
-      };
+        return () => {
+          discoveredListener.remove();
+          connectedListener.remove();
+          positionUpdatedListener.remove();
+        };
+      } else {
+        console.error('CustomEstimoteUWBManager is not available.');
+      }
     }
   }, []);
 
   const handleStartScanning = () => {
     if (Platform.OS === 'android') {
       UWBModule.startScanning();
-    } else if (Platform.OS === 'ios') {
+    } else if (Platform.OS === 'ios' && CustomEstimoteUWBManager) {
       CustomEstimoteUWBManager.startScanning();
     }
   };
@@ -74,7 +78,7 @@ export default function App() {
   const handleStopScanning = () => {
     if (Platform.OS === 'android') {
       UWBModule.stopScanning();
-    } else if (Platform.OS === 'ios') {
+    } else if (Platform.OS === 'ios' && CustomEstimoteUWBManager) {
       CustomEstimoteUWBManager.stopScanning();
     }
   };
@@ -88,6 +92,7 @@ export default function App() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

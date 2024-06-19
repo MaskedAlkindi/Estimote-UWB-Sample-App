@@ -74,5 +74,18 @@
     <string>Light</string>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
+    <!-- Added Permissions for Location, Bluetooth, and Nearby Interaction -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app requires access to your location for better navigation and location-based features.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>This app requires Bluetooth to connect to nearby devices for enhanced functionality.</string>
+    <key>NSNearbyInteractionUsageDescription</key>
+    <string>This app uses UWB technology to interact with nearby devices for a richer experience.</string>
+    <!-- Background Modes for better functionality in background -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+    </array>
   </dict>
 </plist>

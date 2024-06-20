@@ -1,0 +1,121 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EstimoteUWB
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CoreBluetooth
+@_exported import EstimoteUWB
+import Foundation
+import NearbyInteraction
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import os
+import simd
+@_hasMissingDesignatedInitializers public class EstimoteDevice {
+  @objc deinit
+}
+extension EstimoteUWB.EstimoteDevice : EstimoteUWB.EstimoteIdentifable {
+  public var publicId: Swift.String {
+    get
+  }
+}
+extension EstimoteUWB.EstimoteDevice : EstimoteUWB.UWBIdentifable {
+}
+extension EstimoteUWB.EstimoteDevice : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+public protocol UWBPositioningObserver {
+  func didUpdatePosition(for device: EstimoteUWB.UWBDevice)
+}
+public protocol BeaconRangingObserver {
+  func didRange(for beacon: EstimoteUWB.BLEDevice)
+}
+public protocol UWBDiscoveryObserver {
+  var shouldConnectAutomatically: Swift.Bool { get }
+  func didDiscover(device: EstimoteUWB.UWBIdentifable, with rssi: Foundation.NSNumber, from manager: EstimoteUWB.EstimoteUWBManager)
+  func didConnect(to device: EstimoteUWB.UWBIdentifable)
+  func didDisconnect(from device: EstimoteUWB.UWBIdentifable, error: Swift.Error?)
+  func didFailToConnect(to device: EstimoteUWB.UWBIdentifable, error: Swift.Error?)
+}
+public protocol UWBIdentifable {
+  var publicId: Swift.String { get }
+  var name: Swift.String? { get }
+}
+extension EstimoteUWB.UWBIdentifable {
+  public var name: Swift.String? {
+    get
+  }
+}
+public protocol EstimoteIdentifable {
+  var publicId: Swift.String { get }
+}
+extension CoreBluetooth.CBPeripheral : EstimoteUWB.UWBIdentifable {
+  public var publicId: Swift.String {
+    get
+  }
+}
+public class EstimoteUWBManager : Foundation.ObservableObject {
+  public init(positioningObserver: EstimoteUWB.UWBPositioningObserver, discoveryObserver: EstimoteUWB.UWBDiscoveryObserver? = nil, beaconRangingObserver: EstimoteUWB.BeaconRangingObserver? = nil)
+  public func startScanning()
+  public func stopScanning()
+  public func connect(to discoveredIdentifier: Swift.String, options: [Swift.String : Any]? = nil)
+  public func connect(to identifiable: EstimoteUWB.UWBIdentifable)
+  public func disconnect(from device: EstimoteUWB.UWBIdentifable)
+  public func disconnect(from publicId: Swift.String)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UWBDevice : EstimoteUWB.EstimoteDevice {
+  @objc deinit
+}
+extension EstimoteUWB.UWBDevice {
+  public var distance: Swift.Float {
+    get
+  }
+  public var vector: EstimoteUWB.Vector? {
+    get
+  }
+}
+extension EstimoteUWB.UWBDevice : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+#warning("Refactor this into more concrete model and association with peripheral adapter")
+public struct Vector {
+  public var x: Swift.Float {
+    get
+  }
+  public var y: Swift.Float {
+    get
+  }
+  public var z: Swift.Float {
+    get
+  }
+}
+#warning("Need to update and extend this to EstimoteDevice w/ rssi subscription from peripheral")
+@_hasMissingDesignatedInitializers public class BLEDevice {
+  final public let rssi: Foundation.NSNumber
+  @objc deinit
+}
+extension EstimoteUWB.BLEDevice : EstimoteUWB.EstimoteIdentifable {
+  public var publicId: Swift.String {
+    get
+  }
+}
+extension EstimoteUWB.BLEDevice : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+extension EstimoteUWB.BLEDevice : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}

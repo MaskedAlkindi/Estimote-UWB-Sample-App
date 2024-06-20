@@ -10,15 +10,31 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		16BF308C0C93427CB6642BD7 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A69625A8B4F72A2AF1796 /* noop-file.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		74B521222C2355D00094C5B5 /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B521212C2355D00094C5B5 /* EstimoteUWB.xcframework */; };
-		74B521242C2356510094C5B5 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B521232C2356510094C5B5 /* BeaconManager.swift */; };
-		74B521262C2356710094C5B5 /* CustomEstimoteUWBEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B521252C2356710094C5B5 /* CustomEstimoteUWBEventEmitter.swift */; };
+		71A9C597E51E4FC3B641CF49 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02BA14B887475DBB86B647 /* noop-file.swift */; };
+		74CE14852C23900C0086AD66 /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CE14832C238FEF0086AD66 /* EstimoteUWB.xcframework */; };
+		74CE14862C23900C0086AD66 /* EstimoteUWB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74CE14832C238FEF0086AD66 /* EstimoteUWB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74CE14882C23974B0086AD66 /* CustomEstimoteUWBEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE14872C23974B0086AD66 /* CustomEstimoteUWBEventEmitter.swift */; };
+		74CE148A2C23976C0086AD66 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE14892C23976C0086AD66 /* BeaconManager.swift */; };
+		74CE148C2C2397AA0086AD66 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CE148B2C2397AA0086AD66 /* BeaconManager.m */; };
 		96905EF65AED1B983A6B3ABC /* libPods-UWBSampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-UWBSampleApp.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74CE14742C238D110086AD66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74CE14862C23900C0086AD66 /* EstimoteUWB.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* UWBSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWBSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,17 +43,18 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = UWBSampleApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = UWBSampleApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = UWBSampleApp/main.m; sourceTree = "<group>"; };
-		517A69625A8B4F72A2AF1796 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "UWBSampleApp/noop-file.swift"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-UWBSampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UWBSampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-UWBSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWBSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-UWBSampleApp/Pods-UWBSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		74B521212C2355D00094C5B5 /* EstimoteUWB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EstimoteUWB.xcframework; path = ../../../../../Downloads/EstimoteUWB.xcframework; sourceTree = "<group>"; };
-		74B521232C2356510094C5B5 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
-		74B521252C2356710094C5B5 /* CustomEstimoteUWBEventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEstimoteUWBEventEmitter.swift; sourceTree = "<group>"; };
+		74CE14832C238FEF0086AD66 /* EstimoteUWB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EstimoteUWB.xcframework; path = UWBSampleApp/EstimoteUWB.xcframework; sourceTree = "<group>"; };
+		74CE14872C23974B0086AD66 /* CustomEstimoteUWBEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEstimoteUWBEventEmitter.swift; sourceTree = "<group>"; };
+		74CE14892C23976C0086AD66 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		74CE148B2C2397AA0086AD66 /* BeaconManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-UWBSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWBSampleApp.release.xcconfig"; path = "Target Support Files/Pods-UWBSampleApp/Pods-UWBSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		909DDCC0DAFC466892EF1780 /* UWBSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UWBSampleApp-Bridging-Header.h"; path = "UWBSampleApp/UWBSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = UWBSampleApp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		D5E3C8B5EE8841AEB5A8F125 /* UWBSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UWBSampleApp-Bridging-Header.h"; path = "UWBSampleApp/UWBSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF02BA14B887475DBB86B647 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "UWBSampleApp/noop-file.swift"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-UWBSampleApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B521222C2355D00094C5B5 /* EstimoteUWB.xcframework in Frameworks */,
+				74CE14852C23900C0086AD66 /* EstimoteUWB.xcframework in Frameworks */,
 				96905EF65AED1B983A6B3ABC /* libPods-UWBSampleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,14 +77,15 @@
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
-				74B521232C2356510094C5B5 /* BeaconManager.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				74B521252C2356710094C5B5 /* CustomEstimoteUWBEventEmitter.swift */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				517A69625A8B4F72A2AF1796 /* noop-file.swift */,
-				D5E3C8B5EE8841AEB5A8F125 /* UWBSampleApp-Bridging-Header.h */,
+				EF02BA14B887475DBB86B647 /* noop-file.swift */,
+				909DDCC0DAFC466892EF1780 /* UWBSampleApp-Bridging-Header.h */,
+				74CE14872C23974B0086AD66 /* CustomEstimoteUWBEventEmitter.swift */,
+				74CE14892C23976C0086AD66 /* BeaconManager.swift */,
+				74CE148B2C2397AA0086AD66 /* BeaconManager.m */,
 			);
 			name = UWBSampleApp;
 			sourceTree = "<group>";
@@ -75,7 +93,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74B521212C2355D00094C5B5 /* EstimoteUWB.xcframework */,
+				74CE14832C238FEF0086AD66 /* EstimoteUWB.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-UWBSampleApp.a */,
 			);
@@ -159,6 +177,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				74CE14742C238D110086AD66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,9 +302,10 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				74B521262C2356710094C5B5 /* CustomEstimoteUWBEventEmitter.swift in Sources */,
-				74B521242C2356510094C5B5 /* BeaconManager.swift in Sources */,
-				16BF308C0C93427CB6642BD7 /* noop-file.swift in Sources */,
+				74CE148C2C2397AA0086AD66 /* BeaconManager.m in Sources */,
+				74CE148A2C23976C0086AD66 /* BeaconManager.swift in Sources */,
+				74CE14882C23974B0086AD66 /* CustomEstimoteUWBEventEmitter.swift in Sources */,
+				71A9C597E51E4FC3B641CF49 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +320,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = UWBSampleApp/UWBSampleApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N9WJ9JNV5;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",

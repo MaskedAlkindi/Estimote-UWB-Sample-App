@@ -1,10 +1,7 @@
-// BeaconManager.swift
-import React
+// CustomEstimoteUWBManager.swift
 import Foundation
+import React
 import EstimoteUWB
-
-
-
 
 @objc(CustomEstimoteUWBManager)
 class CustomEstimoteUWBManager: RCTEventEmitter {

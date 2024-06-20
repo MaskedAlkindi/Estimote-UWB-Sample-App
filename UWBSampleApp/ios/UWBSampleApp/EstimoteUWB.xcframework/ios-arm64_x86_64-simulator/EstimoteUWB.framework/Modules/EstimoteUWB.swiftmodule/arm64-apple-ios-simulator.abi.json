@@ -1,0 +1,2379 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EstimoteDevice",
+        "printedName": "EstimoteDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "publicId",
+            "printedName": "publicId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB0A6DeviceC8publicIdSSvp",
+            "mangledName": "$s11EstimoteUWB0A6DeviceC8publicIdSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB0A6DeviceC8publicIdSSvg",
+                "mangledName": "$s11EstimoteUWB0A6DeviceC8publicIdSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB0A6DeviceC2idSSvp",
+            "mangledName": "$s11EstimoteUWB0A6DeviceC2idSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB0A6DeviceC2idSSvg",
+                "mangledName": "$s11EstimoteUWB0A6DeviceC2idSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11EstimoteUWB0A6DeviceC",
+        "mangledName": "$s11EstimoteUWB0A6DeviceC",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "EstimoteIdentifable",
+            "printedName": "EstimoteIdentifable",
+            "usr": "s:11EstimoteUWB0A11IdentifableP",
+            "mangledName": "$s11EstimoteUWB0A11IdentifableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UWBIdentifable",
+            "printedName": "UWBIdentifable",
+            "usr": "s:11EstimoteUWB14UWBIdentifableP",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "NearbyInteraction",
+        "printedName": "NearbyInteraction",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UWBPositioningObserver",
+        "printedName": "UWBPositioningObserver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didUpdatePosition",
+            "printedName": "didUpdatePosition(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBDevice",
+                "printedName": "EstimoteUWB.UWBDevice",
+                "usr": "s:11EstimoteUWB9UWBDeviceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB22UWBPositioningObserverP17didUpdatePosition3foryAA9UWBDeviceC_tF",
+            "mangledName": "$s11EstimoteUWB22UWBPositioningObserverP17didUpdatePosition3foryAA9UWBDeviceC_tF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBPositioningObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBPositioningObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11EstimoteUWB22UWBPositioningObserverP",
+        "mangledName": "$s11EstimoteUWB22UWBPositioningObserverP",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeaconRangingObserver",
+        "printedName": "BeaconRangingObserver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didRange",
+            "printedName": "didRange(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BLEDevice",
+                "printedName": "EstimoteUWB.BLEDevice",
+                "usr": "s:11EstimoteUWB9BLEDeviceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB21BeaconRangingObserverP8didRange3foryAA9BLEDeviceC_tF",
+            "mangledName": "$s11EstimoteUWB21BeaconRangingObserverP8didRange3foryAA9BLEDeviceC_tF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.BeaconRangingObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.BeaconRangingObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11EstimoteUWB21BeaconRangingObserverP",
+        "mangledName": "$s11EstimoteUWB21BeaconRangingObserverP",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UWBDiscoveryObserver",
+        "printedName": "UWBDiscoveryObserver",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldConnectAutomatically",
+            "printedName": "shouldConnectAutomatically",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP26shouldConnectAutomaticallySbvp",
+            "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP26shouldConnectAutomaticallySbvp",
+            "moduleName": "EstimoteUWB",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP26shouldConnectAutomaticallySbvg",
+                "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP26shouldConnectAutomaticallySbvg",
+                "moduleName": "EstimoteUWB",
+                "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBDiscoveryObserver>",
+                "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBDiscoveryObserver>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "didDiscover",
+            "printedName": "didDiscover(device:with:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EstimoteUWBManager",
+                "printedName": "EstimoteUWB.EstimoteUWBManager",
+                "usr": "s:11EstimoteUWB0A10UWBManagerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP11didDiscover6device4with4fromyAA14UWBIdentifable_p_So8NSNumberCAA0A10UWBManagerCtF",
+            "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP11didDiscover6device4with4fromyAA14UWBIdentifable_p_So8NSNumberCAA0A10UWBManagerCtF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBDiscoveryObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBDiscoveryObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didConnect",
+            "printedName": "didConnect(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP10didConnect2toyAA14UWBIdentifable_p_tF",
+            "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP10didConnect2toyAA14UWBIdentifable_p_tF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBDiscoveryObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBDiscoveryObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didDisconnect",
+            "printedName": "didDisconnect(from:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP13didDisconnect4from5erroryAA14UWBIdentifable_p_s5Error_pSgtF",
+            "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP13didDisconnect4from5erroryAA14UWBIdentifable_p_s5Error_pSgtF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBDiscoveryObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBDiscoveryObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToConnect",
+            "printedName": "didFailToConnect(to:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP16didFailToConnect2to5erroryAA14UWBIdentifable_p_s5Error_pSgtF",
+            "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP16didFailToConnect2to5erroryAA14UWBIdentifable_p_s5Error_pSgtF",
+            "moduleName": "EstimoteUWB",
+            "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBDiscoveryObserver>",
+            "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBDiscoveryObserver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP",
+        "mangledName": "$s11EstimoteUWB20UWBDiscoveryObserverP",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UWBIdentifable",
+        "printedName": "UWBIdentifable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "publicId",
+            "printedName": "publicId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB14UWBIdentifableP8publicIdSSvp",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifableP8publicIdSSvp",
+            "moduleName": "EstimoteUWB",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP8publicIdSSvg",
+                "mangledName": "$s11EstimoteUWB14UWBIdentifableP8publicIdSSvg",
+                "moduleName": "EstimoteUWB",
+                "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBIdentifable>",
+                "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBIdentifable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB14UWBIdentifableP4nameSSSgvp",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifableP4nameSSSgvp",
+            "moduleName": "EstimoteUWB",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP4nameSSSgvg",
+                "mangledName": "$s11EstimoteUWB14UWBIdentifableP4nameSSSgvg",
+                "moduleName": "EstimoteUWB",
+                "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBIdentifable>",
+                "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBIdentifable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB14UWBIdentifablePAAE4nameSSSgvp",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifablePAAE4nameSSSgvp",
+            "moduleName": "EstimoteUWB",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB14UWBIdentifablePAAE4nameSSSgvg",
+                "mangledName": "$s11EstimoteUWB14UWBIdentifablePAAE4nameSSSgvg",
+                "moduleName": "EstimoteUWB",
+                "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.UWBIdentifable>",
+                "sugared_genericSig": "<Self where Self : EstimoteUWB.UWBIdentifable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11EstimoteUWB14UWBIdentifableP",
+        "mangledName": "$s11EstimoteUWB14UWBIdentifableP",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EstimoteIdentifable",
+        "printedName": "EstimoteIdentifable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "publicId",
+            "printedName": "publicId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB0A11IdentifableP8publicIdSSvp",
+            "mangledName": "$s11EstimoteUWB0A11IdentifableP8publicIdSSvp",
+            "moduleName": "EstimoteUWB",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB0A11IdentifableP8publicIdSSvg",
+                "mangledName": "$s11EstimoteUWB0A11IdentifableP8publicIdSSvg",
+                "moduleName": "EstimoteUWB",
+                "genericSig": "<τ_0_0 where τ_0_0 : EstimoteUWB.EstimoteIdentifable>",
+                "sugared_genericSig": "<Self where Self : EstimoteUWB.EstimoteIdentifable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11EstimoteUWB0A11IdentifableP",
+        "mangledName": "$s11EstimoteUWB0A11IdentifableP",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EstimoteUWBManager",
+        "printedName": "EstimoteUWBManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(positioningObserver:discoveryObserver:beaconRangingObserver:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EstimoteUWBManager",
+                "printedName": "EstimoteUWB.EstimoteUWBManager",
+                "usr": "s:11EstimoteUWB0A10UWBManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBPositioningObserver",
+                "printedName": "EstimoteUWB.UWBPositioningObserver",
+                "usr": "s:11EstimoteUWB22UWBPositioningObserverP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EstimoteUWB.UWBDiscoveryObserver?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UWBDiscoveryObserver",
+                    "printedName": "EstimoteUWB.UWBDiscoveryObserver",
+                    "usr": "s:11EstimoteUWB20UWBDiscoveryObserverP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EstimoteUWB.BeaconRangingObserver?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconRangingObserver",
+                    "printedName": "EstimoteUWB.BeaconRangingObserver",
+                    "usr": "s:11EstimoteUWB21BeaconRangingObserverP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC19positioningObserver09discoveryE0013beaconRangingE0AcA014UWBPositioningE0_p_AA012UWBDiscoveryE0_pSgAA06BeaconhE0_pSgtcfc",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC19positioningObserver09discoveryE0013beaconRangingE0AcA014UWBPositioningE0_p_AA012UWBDiscoveryE0_pSgAA06BeaconhE0_pSgtcfc",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC13startScanningyyF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC13startScanningyyF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC12stopScanningyyF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC12stopScanningyyF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(to:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC7connect2to7optionsySS_SDySSypGSgtF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC7connect2to7optionsySS_SDySSypGSgtF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC7connect2toyAA14UWBIdentifable_p_tF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC7connect2toyAA14UWBIdentifable_p_tF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UWBIdentifable",
+                "printedName": "EstimoteUWB.UWBIdentifable",
+                "usr": "s:11EstimoteUWB14UWBIdentifableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC10disconnect4fromyAA14UWBIdentifable_p_tF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC10disconnect4fromyAA14UWBIdentifable_p_tF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11EstimoteUWB0A10UWBManagerC10disconnect4fromySS_tF",
+            "mangledName": "$s11EstimoteUWB0A10UWBManagerC10disconnect4fromySS_tF",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11EstimoteUWB0A10UWBManagerC",
+        "mangledName": "$s11EstimoteUWB0A10UWBManagerC",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UWBDevice",
+        "printedName": "UWBDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "distance",
+            "printedName": "distance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9UWBDeviceC8distanceSfvp",
+            "mangledName": "$s11EstimoteUWB9UWBDeviceC8distanceSfvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9UWBDeviceC8distanceSfvg",
+                "mangledName": "$s11EstimoteUWB9UWBDeviceC8distanceSfvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vector",
+            "printedName": "vector",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EstimoteUWB.Vector?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Vector",
+                    "printedName": "EstimoteUWB.Vector",
+                    "usr": "s:11EstimoteUWB6VectorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9UWBDeviceC6vectorAA6VectorVSgvp",
+            "mangledName": "$s11EstimoteUWB9UWBDeviceC6vectorAA6VectorVSgvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "EstimoteUWB.Vector?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Vector",
+                        "printedName": "EstimoteUWB.Vector",
+                        "usr": "s:11EstimoteUWB6VectorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9UWBDeviceC6vectorAA6VectorVSgvg",
+                "mangledName": "$s11EstimoteUWB9UWBDeviceC6vectorAA6VectorVSgvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9UWBDeviceC11descriptionSSvp",
+            "mangledName": "$s11EstimoteUWB9UWBDeviceC11descriptionSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9UWBDeviceC11descriptionSSvg",
+                "mangledName": "$s11EstimoteUWB9UWBDeviceC11descriptionSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11EstimoteUWB9UWBDeviceC",
+        "mangledName": "$s11EstimoteUWB9UWBDeviceC",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:11EstimoteUWB0A6DeviceC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "EstimoteUWB.EstimoteDevice"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EstimoteIdentifable",
+            "printedName": "EstimoteIdentifable",
+            "usr": "s:11EstimoteUWB0A11IdentifableP",
+            "mangledName": "$s11EstimoteUWB0A11IdentifableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UWBIdentifable",
+            "printedName": "UWBIdentifable",
+            "usr": "s:11EstimoteUWB14UWBIdentifableP",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NearbyInteraction",
+        "printedName": "NearbyInteraction",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Vector",
+        "printedName": "Vector",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "x",
+            "printedName": "x",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB6VectorV1xSfvp",
+            "mangledName": "$s11EstimoteUWB6VectorV1xSfvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB6VectorV1xSfvg",
+                "mangledName": "$s11EstimoteUWB6VectorV1xSfvg",
+                "moduleName": "EstimoteUWB",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "y",
+            "printedName": "y",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB6VectorV1ySfvp",
+            "mangledName": "$s11EstimoteUWB6VectorV1ySfvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB6VectorV1ySfvg",
+                "mangledName": "$s11EstimoteUWB6VectorV1ySfvg",
+                "moduleName": "EstimoteUWB",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z",
+            "printedName": "z",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB6VectorV1zSfvp",
+            "mangledName": "$s11EstimoteUWB6VectorV1zSfvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB6VectorV1zSfvg",
+                "mangledName": "$s11EstimoteUWB6VectorV1zSfvg",
+                "moduleName": "EstimoteUWB",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11EstimoteUWB6VectorV",
+        "mangledName": "$s11EstimoteUWB6VectorV",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BLEDevice",
+        "printedName": "BLEDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rssi",
+            "printedName": "rssi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9BLEDeviceC4rssiSo8NSNumberCvp",
+            "mangledName": "$s11EstimoteUWB9BLEDeviceC4rssiSo8NSNumberCvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9BLEDeviceC4rssiSo8NSNumberCvg",
+                "mangledName": "$s11EstimoteUWB9BLEDeviceC4rssiSo8NSNumberCvg",
+                "moduleName": "EstimoteUWB",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publicId",
+            "printedName": "publicId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9BLEDeviceC8publicIdSSvp",
+            "mangledName": "$s11EstimoteUWB9BLEDeviceC8publicIdSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9BLEDeviceC8publicIdSSvg",
+                "mangledName": "$s11EstimoteUWB9BLEDeviceC8publicIdSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9BLEDeviceC2idSSvp",
+            "mangledName": "$s11EstimoteUWB9BLEDeviceC2idSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9BLEDeviceC2idSSvg",
+                "mangledName": "$s11EstimoteUWB9BLEDeviceC2idSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11EstimoteUWB9BLEDeviceC11descriptionSSvp",
+            "mangledName": "$s11EstimoteUWB9BLEDeviceC11descriptionSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11EstimoteUWB9BLEDeviceC11descriptionSSvg",
+                "mangledName": "$s11EstimoteUWB9BLEDeviceC11descriptionSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11EstimoteUWB9BLEDeviceC",
+        "mangledName": "$s11EstimoteUWB9BLEDeviceC",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "EstimoteIdentifable",
+            "printedName": "EstimoteIdentifable",
+            "usr": "s:11EstimoteUWB0A11IdentifableP",
+            "mangledName": "$s11EstimoteUWB0A11IdentifableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteUWB",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CBPeripheral",
+        "printedName": "CBPeripheral",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "publicId",
+            "printedName": "publicId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So12CBPeripheralC11EstimoteUWBE8publicIdSSvp",
+            "mangledName": "$sSo12CBPeripheralC11EstimoteUWBE8publicIdSSvp",
+            "moduleName": "EstimoteUWB",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So12CBPeripheralC11EstimoteUWBE8publicIdSSvg",
+                "mangledName": "$sSo12CBPeripheralC11EstimoteUWBE8publicIdSSvg",
+                "moduleName": "EstimoteUWB",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CBPeripheral",
+        "moduleName": "CoreBluetooth",
+        "isOpen": true,
+        "intro_iOS": "5.0",
+        "objc_name": "CBPeripheral",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)CBPeer",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreBluetooth.CBPeer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UWBIdentifable",
+            "printedName": "UWBIdentifable",
+            "usr": "s:11EstimoteUWB14UWBIdentifableP",
+            "mangledName": "$s11EstimoteUWB14UWBIdentifableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/EstimoteUWBManager.swift",
+      "kind": "Array",
+      "offset": 1716,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 184,
+      "length": 3,
+      "value": "0x1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 3,
+      "value": "0x2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 3,
+      "value": "0x3"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 356,
+      "length": 3,
+      "value": "0xA"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 401,
+      "length": 3,
+      "value": "0xB"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/UInt8.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 3,
+      "value": "0xC"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/DispatchQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/DispatchQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 14,
+      "value": "\".peripherals\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "\"0c\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/EstimoteFrameParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/SessionAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 366,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/SessionAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
+      "length": 14,
+      "value": "\"EstimoteUWB.SessionAdapter\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 30,
+      "value": "\"EstimoteUWBBeaconRestoration\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "Array",
+      "offset": 583,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "Array",
+      "offset": 874,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "Array",
+      "offset": 944,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "Array",
+      "offset": 1092,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1225,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsScanner.swift",
+      "kind": "Array",
+      "offset": 1268,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Utilities\/LowPassFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 188,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/String.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 38,
+      "value": "\"6E400001-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 6,
+      "value": "\"180F\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 6,
+      "value": "\"FE9A\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 38,
+      "value": "\"6E400002-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 459,
+      "length": 38,
+      "value": "\"6E400003-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Extensions\/CBUUID.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 8,
+      "value": "\"0x2A19\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Model\/PeripheralPosition.swift",
+      "kind": "IntegerLiteral",
+      "offset": 269,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 324,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Peripherals\/PeripheralsAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 159,
+      "length": 17,
+      "value": "\"EstimoteUWB.PeripheralAdapter\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 129,
+      "length": 11,
+      "value": "\"debug.log\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 167,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 775,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 865,
+      "length": 44,
+      "value": "\"Failed to create file with error: \""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 908,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 200,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1045,
+      "length": 24,
+      "value": "\"yyyy-MM-dd hh:mm:ssSSS\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 5,
+      "value": "\"✅\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1451,
+      "length": 6,
+      "value": "\"💬\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 6,
+      "value": "\"🔬\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 6,
+      "value": "\"🚨\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 8,
+      "value": "\"⚠️\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1589,
+      "length": 6,
+      "value": "\"🔥\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 5,
+      "value": "\"✅\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1451,
+      "length": 6,
+      "value": "\"💬\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 6,
+      "value": "\"🔬\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 6,
+      "value": "\"🚨\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 8,
+      "value": "\"⚠️\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/Downloads\/iOS-Estimote-UWB-Source\/EstimoteUWB\/EstimoteUWB\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1589,
+      "length": 6,
+      "value": "\"🔥\""
+    }
+  ]
+}

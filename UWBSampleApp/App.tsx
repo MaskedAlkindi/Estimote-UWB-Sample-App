@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, Text, View, Button, DeviceEventEmitter, Alert, Platform, NativeEventEmitter, NativeModules } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import UWBManager from './UWBManager'; // Adjust the path as necessary
 
-const { UWBModule, CustomEstimoteUWBManager } = NativeModules;
+const { UWBModule } = NativeModules;
 
 export default function App() {
   useEffect(() => {
@@ -39,47 +40,29 @@ export default function App() {
         errorListener.remove();
       };
     } else if (Platform.OS === 'ios') {
-      if (CustomEstimoteUWBManager) {
-        const eventEmitter = new NativeEventEmitter(CustomEstimoteUWBManager);
+      // Start scanning when the component mounts
+      UWBManager.startScanning();
 
-        const discoveredListener = eventEmitter.addListener('onDeviceDiscovered', (deviceInfo) => {
-          console.log('Discovered device:', deviceInfo);
-        });
-
-        const connectedListener = eventEmitter.addListener('onDeviceConnected', (deviceInfo) => {
-          console.log('Connected to device:', deviceInfo);
-        });
-
-        const positionUpdatedListener = eventEmitter.addListener('onPositionUpdated', (positionInfo) => {
-          console.log('Position updated:', positionInfo);
-        });
-
-        CustomEstimoteUWBManager.startScanning();
-
-        return () => {
-          discoveredListener.remove();
-          connectedListener.remove();
-          positionUpdatedListener.remove();
-        };
-      } else {
-        console.error('CustomEstimoteUWBManager is not available.');
-      }
+      // Cleanup function to stop scanning when the component unmounts
+      return () => {
+        UWBManager.stopScanning();
+      };
     }
   }, []);
 
   const handleStartScanning = () => {
     if (Platform.OS === 'android') {
       UWBModule.startScanning();
-    } else if (Platform.OS === 'ios' && CustomEstimoteUWBManager) {
-      CustomEstimoteUWBManager.startScanning();
+    } else if (Platform.OS === 'ios') {
+      UWBManager.startScanning();
     }
   };
 
   const handleStopScanning = () => {
     if (Platform.OS === 'android') {
       UWBModule.stopScanning();
-    } else if (Platform.OS === 'ios' && CustomEstimoteUWBManager) {
-      CustomEstimoteUWBManager.stopScanning();
+    } else if (Platform.OS === 'ios') {
+      UWBManager.stopScanning();
     }
   };
 
@@ -92,7 +75,6 @@ export default function App() {
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {

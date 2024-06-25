@@ -1,12 +1,30 @@
-import React, { useEffect } from 'react';
-import { StyleSheet, Text, View, Button, DeviceEventEmitter, Alert, Platform, NativeEventEmitter, NativeModules } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, Text, View, Button, ScrollView, Image, Alert, DeviceEventEmitter, Platform, NativeEventEmitter, NativeModules } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import UWBManager from './UWBManager'; // Adjust the path as necessary
 
 const { UWBModule } = NativeModules;
 
 export default function App() {
+  const [devices, setDevices] = useState([]);
+
   useEffect(() => {
+    const updateDeviceList = (data) => {
+      setDevices(prevDevices => {
+        const index = prevDevices.findIndex(device => device.id === data.id);
+        if (index > -1) {
+          prevDevices[index] = data; // Update existing device
+          return [...prevDevices];
+        } else {
+          return [...prevDevices, data]; // Add new device
+        }
+      });
+    };
+
+    const deviceListener = DeviceEventEmitter.addListener('onPositionUpdated', (event) => {
+      updateDeviceList({ id: event.id, distance: event.distance });
+    });
+
     if (Platform.OS === 'android') {
       UWBModule.initUWB()
         .then(() => {
@@ -14,40 +32,18 @@ export default function App() {
         })
         .catch(error => {
           console.error('UWB initialization failed:', error);
+          Alert.alert('Initialization Error', 'UWB initialization failed. Please check the console for more details.');
         });
-
-      const permissionGrantedListener = DeviceEventEmitter.addListener('onPermissionGranted', (data) => {
-        console.log('Permissions granted:', data);
-      });
-
-      const permissionDeniedListener = DeviceEventEmitter.addListener('onPermissionDenied', (error) => {
-        console.error('Permissions denied:', error);
-        Alert.alert('Permission Error', 'Necessary permissions were denied. Please enable them in settings.');
-      });
-
-      const deviceFoundListener = DeviceEventEmitter.addListener('onDeviceFound', (data) => {
-        console.log('Device found:', data);
-      });
-
-      const errorListener = DeviceEventEmitter.addListener('onError', (error) => {
-        console.error('Error:', error);
-      });
-
-      return () => {
-        permissionGrantedListener.remove();
-        permissionDeniedListener.remove();
-        deviceFoundListener.remove();
-        errorListener.remove();
-      };
     } else if (Platform.OS === 'ios') {
-      // Start scanning when the component mounts
       UWBManager.startScanning();
-
-      // Cleanup function to stop scanning when the component unmounts
-      return () => {
-        UWBManager.stopScanning();
-      };
     }
+
+    return () => {
+      deviceListener.remove();
+      if (Platform.OS === 'ios') {
+        UWBManager.stopScanning();
+      }
+    };
   }, []);
 
   const handleStartScanning = () => {
@@ -68,9 +64,22 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <Button title="Start Scanning" onPress={handleStartScanning} />
-      <Button title="Stop Scanning" onPress={handleStopScanning} />
+      <Text style={styles.header}>Beacon Scanner</Text>
+      <View style={styles.buttonContainer}>
+        <Button title="Start Scanning" onPress={handleStartScanning} color="#4CAF50" />
+        <Button title="Stop Scanning" onPress={handleStopScanning} color="#f44336" />
+      </View>
+      <ScrollView style={styles.listContainer}>
+        {devices.map((device, index) => (
+          <View key={index} style={styles.listItem}>
+            <Image source={require('./Beacon.png')} style={styles.beaconImage} />
+            <View style={styles.infoContainer}>
+              <Text style={styles.infoText}>ID: {device.id}</Text>
+              <Text style={styles.infoText}>Distance: {device.distance.toFixed(3)} m</Text>
+            </View>
+          </View>
+        ))}
+      </ScrollView>
       <StatusBar style="auto" />
     </View>
   );
@@ -81,6 +90,42 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    paddingTop: 30,
+  },
+  header: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '100%',
+    marginBottom: 20,
+  },
+  listContainer: {
+    width: '100%',
+  },
+  listItem: {
+    flexDirection: 'row',
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+    alignItems: 'center',
+  },
+  beaconImage: {
+    width: 50,
+    height: 50,
+    marginRight: 20,
+  },
+  infoContainer: {
+    flex: 1,
+  },
+  infoText: {
+    fontSize: 18,
   },
 });
+
+
+
